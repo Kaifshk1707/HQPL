@@ -9,9 +9,9 @@ import Profile from './screens/Profile';
 import AboutUs from './Others/AboutUs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-
 const Tab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
+
 
 const BottomTabs = () => {
     return (
@@ -44,10 +44,10 @@ const MainContainer = () => {
     return (
         <Drawer.Navigator>
             <Drawer.Screen name="Home" component={BottomTabs} />
-            <Drawer.Screen name="Profile" component={Profile} options={{headerShown:false}}/>
-            <Drawer.Screen name="Group" component={Group} />
-            <Drawer.Screen name="Chats" component={Chats} />
-            <Drawer.Screen name="AboutUs" component={AboutUs} />
+            <Drawer.Screen name="Profile" component={Profile} options={{ headerShown: false }} />
+            <Drawer.Screen name="Group" component={Group} options={{ headerShown: false }} />
+            <Drawer.Screen name="Chats" component={Chats} options={{ headerShown: false }} />
+            <Drawer.Screen name="AboutUs" component={AboutUs} options={{ headerShown: false }} />
         </Drawer.Navigator>
     );
 }
